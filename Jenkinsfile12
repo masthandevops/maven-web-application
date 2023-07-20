@@ -22,7 +22,7 @@ node ( 'Java_node1' )
  {
  sh "${mavenHome}/bin/mvn clean package"
  }
- 
+ //testing coding 
   /*
  stage("ExecuteSonarQubeReport")
  {
