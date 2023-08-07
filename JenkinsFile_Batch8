@@ -2,6 +2,7 @@ node {
 
 def MavenHome=tool name: "Maven_3.9.3"
 
+properties([pipelineTriggers([cron('* * * * *')])])
 stage('CheckOutCode'){
 
 git credentialsId: 'GitHub_Cred', url: 'https://github.com/DevOps-Rjpt-2022/maven-web-application.git'
