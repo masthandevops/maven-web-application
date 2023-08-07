@@ -1,0 +1,37 @@
+node {
+
+def MavenHome=tool name: "Maven_3.9.3"
+
+stage('CheckOutCode'){
+
+git credentialsId: 'GitHub_Cred', url: 'https://github.com/DevOps-Rjpt-2022/maven-web-application.git'
+
+}
+
+stage('CreateArtifact'){
+
+sh "${MavenHome}/bin/mvn clean package"
+
+}
+/*
+stage('CodeQualityTest'){
+
+sh "${MavenHome}/bin/mvn clean sonar:sonar"
+
+}
+
+stage('DeployToNexus'){
+
+sh "${MavenHome}/bin/mvn clean deploy"
+
+}
+
+stage('DeployIntoTomcat'){
+sshagent(['TOmcat_Server_Cred']) {
+sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.234.186.204:/opt/apache-tomcat-9.0.76/webapps/"
+}
+
+}
+*/
+
+}
