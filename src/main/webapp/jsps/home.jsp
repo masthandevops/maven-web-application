@@ -31,11 +31,11 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	</span>
 	<span style="font-weight: bold;">
 		DevOps Online Training, 
-		Trainer : Jeevan Dandoji,
+		Trainer : masthan,
 		Rajampet-516115.
 		Andra Pradesh.
-		+91-7842602230
-		jeevan46@gmail.com
+		+91-6300231997
+		saginalamasthan168@gmail.com
 		<br>
 		<a href="mailto:devopstrainingblr@gmail.com">Mail to DevOps Online Training</a>
 	</span>
